@@ -410,26 +410,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.toggle-specs');
-            
-            toggleButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const productCard = this.closest('.product-detail-card');
-                    const productDetails = productCard.querySelector('.product-details');
-                    const icon = this.querySelector('i');
-                    
-                    // Toggle the details visibility
-                    productDetails.style.display = 
-                        productDetails.style.display === 'none' ? 'block' : 'none';
-                    
-                    // Toggle the icon
-                    icon.classList.toggle('fa-chevron-down');
-                    icon.classList.toggle('fa-chevron-up');
-                });
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html> 
